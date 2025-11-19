@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
+<head>
+    <title>Mi Aplicacion</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+</head>
+<body>
+    <header>
+        <nav id="navegador">
+            <a href="#">Mi Aplicacion</a>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="bienvenida">
+                <h1>¡Bienvenido!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ullam minus alias totam delectus pariatur iure voluptas quas eos eaque consectetur, ab veniam, provident vel optio mollitia dolorum inventore soluta placeat quae esse excepturi perspiciatis ipsam harum? Magni, voluptatibus accusamus architecto ea mollitia aliquam ipsam, esse et necessitatibus, laudantium eaque?</p>
+            </div>
+            <div class="login">
+                <h3>Ya estoy registrado</h3>
+                <form action="">
+                    <p>
+                        <input type="text" id="mail" name="mail" placeholder="correo electrónico" required>
+                    </p>
+                    <p>
+                        <input type="text" id="password" name="password" placeholder="contraseña">
+                    </p>
+                    <div class="btns">
+                        <button>Enviar</button>
+                        <button>Cancelar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="registrar">
+            <h3>No estoy registrado aún</h3>
+            <p>Introduce tu correo electrónico para crear una cuenta</p>
+            <form action="">
+                <p>
+                    <input type="text" id="mail" name="mail" placeholder="correo electrónico" required>
+                </p>
+                <div class="btns">
+                    <button>Enviar</button>
+                    <button>Cancelar</button>
+                </div>
+            </form>
+            </div>
+        </section>
+    </main>
+    <footer id="pie">
+        <p> © 2025 Javier Cabrera</p>
+    </footer>
+</body>
 </html>

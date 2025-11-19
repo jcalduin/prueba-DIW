@@ -1,8 +1,99 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import "normalize.css";
+@import "theme.css";
+
+
+
+nav#navegador {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--gradient-background);
+  padding: 0.5rem 2rem 0.5rem 1.5rem;
+
+  >a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+
+    a {
+      color: var(--blanco);
+      text-decoration: none;
+      font-size: 1rem;
+      padding:0.5rem;
+      border-radius: 0.5rem;
+      transition: 1 ease;
+
+      &:hover {
+        background-color: var(--fondo-claro);
+      }
+    }
+  }
 }
 
-a {
-  color: #00B7FF;
+footer#pie {
+  background: var(--gradient-background);
+  text-align: center;
+  padding: 2rem;
+}
+
+main {
+
+  padding: 3rem;
+  background-color: var(--fondo-gris);
+
+  section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "bienvenida login"
+      "bienvenida registro";
+    div.bienvenida{grid-area: bienvenida;}
+    div.login {grid-area: login;}
+    div.registrar {grid-area: registro;}
+
+    padding: 2rem;
+    background-color: var(--blanco);
+    border-radius: 0.5rem;
+    gap:1rem;
+
+    .login {
+      padding: 1rem;
+      background: var(--gradient-background);
+      border-radius: 0.5rem;
+      h3 {
+        color: var(--blanco);
+      }
+    }
+
+    .registrar {
+      padding: 1rem;
+      background: var(--gradient-background);
+      border-radius: 0.5rem;
+      h3 {
+        color: var(--blanco);
+      }
+    }
+
+    .bienvenida {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+
+      h1 {
+        font-size: 2rem;
+        color: var(--morado-principal);
+      }
+    }
+  }
+  
 }
